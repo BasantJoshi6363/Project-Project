@@ -6,7 +6,7 @@ import PhoneShape from '../components/PhoneShape'
 
 const Home = () => {
     return (
-        <div className=' bg-zinc-800 text-white h-screen'>
+        <div className=' bg-black text-white h-screen'>
             <Navbar />
             <Banner />
             <FlashSaleContainer />
