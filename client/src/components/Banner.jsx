@@ -14,7 +14,7 @@ const Banner = () => {
     ];
 
     return (
-        <div className='px-10 border-r flex flex-row whitespace-nowrap'>
+        <div className='px-10  flex flex-row whitespace-nowrap'>
             {/* Sidebar */}
             <div className="parent w-[20%] border-r">
                 <ul className="w-1/4 p-4">

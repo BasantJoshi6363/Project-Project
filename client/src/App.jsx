@@ -6,11 +6,7 @@ import Home from './pages/Home';
 
 
 // Protected Route Component
-const ProtectedRoute = ({ children }) => {
-    const isAuthenticated = localStorage.getItem('token');
-    console.log(isAuthenticated)
-    return isAuthenticated ? <Navigate to="/dashboard"/> : <Navigate to="/login" />;
-};
+
 
 const App = () => {
     return (
@@ -18,17 +14,10 @@ const App = () => {
 
             <Router>
                 <Routes>
-                    <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<Login />} />
                     <Route path="/register" element={<Register />} />
-                    <Route
-                        path="/dashboard"
-                        element={
-                            // <ProtectedRoute>
-                                <Home />
-                            // </ProtectedRoute>
-                        }
-                    />
-                    <Route path="/" element={<Navigate to="/login" />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/dashboard" element={<Home />} />
                 </Routes>
             </Router>
         </div>
