@@ -21,7 +21,7 @@ const Navbar = () => {
     <header className="bg-black text-white border-b">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
-        <div className="text-lg font-bold">Exclusive</div>
+        <div className="text-lg font-bold">NepMart</div>
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-6">
